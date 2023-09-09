@@ -6,36 +6,53 @@ body {
 }
 
 header {
-    background-color: #f4f4f4;
-    padding: 20px;
+background-color: ligthblue;
+padding: 20px;
+text-align: center;
 }
 
-nav ul{
-    list-style: none;
-    padding: 0;
+#info-personal, #habilidades {
+margin: 20px;
+padding: 20px;
+border: 1px solid #ccc;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+#info-personal h2, #habilidades h2 {
+font-size: 24px;
 }
 
-section {
-    margin: 20px;
+#habilidades ul {
+list-style-type: square;
 }
 
 footer {
-    background-color: rgb(73, 36, 238);
-    padding: 10px;
+background-color: #f1f1f1;
+color: #333;
+text-align: center;
+padding: 10px;
+position: absolute;
+bottom: 0;
+width: 100%;
+}    
+
+@media only screen and (max-width: 600px) {
+
+header, #info-personal, #habilidades {
+padding: 10px;
 }
 
-@media (max-width 600px){
-    body{
-        font-size: 16px;
-    }
-    header,
-    section,
-    footer{
-        padding: 14px;
-    }
+h1, h2 {
+font-size: 18px;
+}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+header, #info-personal, #habilidades {
+padding: 20px;
+}
+
+h1, h2 {
+font-size: 22px;
+}
 }
